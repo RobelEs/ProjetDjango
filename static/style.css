@@ -1,3 +1,11 @@
+#header, #footer {
+    background: rebeccapurple;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
 body {
+
     background: antiquewhite;
 }

@@ -23,6 +23,7 @@ urlpatterns = [
 
     path('', views.base),
     path('index', views.base),
-    path('show', views.show_form),
+    path('show', views.show_form, name="showProduit"),
+    path('cree', views.creeProduit, name="showCree"),
 
 ]

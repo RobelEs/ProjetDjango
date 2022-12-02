@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "formulaire-Produit.html" %}
 
-</body>
-</html>
+{% block formulaire%}
+
+    <form method="post" action="{% url "showCree" %}">
+        <label>
+            Nom
+        <input name="nom">
+        </label>
+        <label>
+            Prix
+        <input type='number' name="prix">
+        </label>
+        <input type="submit">
+    </form>
+    <a href="{% url "showProduit" %}">Voir les produits disponible</a>
+{% endblock %}
